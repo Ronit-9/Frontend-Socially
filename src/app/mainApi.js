@@ -1,7 +1,7 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
 // Export base URL from env
-export const BASE_URL = "https://mernmangsir.onrender.com/api"; // Vite
+export const BASE_URL = import.meta.env.VITE_BASE_URL; // Vite
 // export const BASE_URL = process.env.REACT_APP_BASE_URL; // CRA
 
 export const mainApi = createApi({
